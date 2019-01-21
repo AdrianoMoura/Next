@@ -234,6 +234,11 @@
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
+
+          @media (min-width: 1366px) {
+            width: 120px;
+            height: 120px;
+          }
         }
 
         p {
