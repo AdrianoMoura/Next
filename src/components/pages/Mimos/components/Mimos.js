@@ -25,7 +25,7 @@ class App extends Component {
             title: 'Desconto',
             subtitle: 'especial',
             icon: 'mc.svg',
-          },
+          }
         ]
       },
       {
@@ -36,6 +36,11 @@ class App extends Component {
             title: 'R$ 20',
             subtitle: 'off por mês',
             icon: 'ifood.svg',
+          },
+          {
+            title: 'Desconto',
+            subtitle: 'especial',
+            icon: 'mc.svg',
           },
           {
             title: 'Desconto',
@@ -58,12 +63,42 @@ class App extends Component {
             subtitle: 'especial',
             icon: 'mc.svg',
           },
+          {
+            title: 'R$ 20',
+            subtitle: 'off por mês',
+            icon: 'ifood.svg',
+          },
+          {
+            title: 'Desconto',
+            subtitle: 'especial',
+            icon: 'mc.svg',
+          },
         ]
       },
       {
         title: 'Entretenimento',
         icon: 'entretenimento.svg',
         mimos: [
+          {
+            title: 'R$ 20',
+            subtitle: 'off por mês',
+            icon: 'ifood.svg',
+          },
+          {
+            title: 'Desconto',
+            subtitle: 'especial',
+            icon: 'mc.svg',
+          },
+          {
+            title: 'R$ 20',
+            subtitle: 'off por mês',
+            icon: 'ifood.svg',
+          },
+          {
+            title: 'Desconto',
+            subtitle: 'especial',
+            icon: 'mc.svg',
+          },
           {
             title: 'R$ 20',
             subtitle: 'off por mês',

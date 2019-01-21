@@ -208,8 +208,9 @@
 
       @media (min-width: 768px) {
         display: flex;
-        width: 400px;
+        flex-flow: row wrap;
         margin: auto;
+        justify-content: center;
       }
 
       .item {
@@ -225,6 +226,7 @@
           align-items: center;
           flex-direction: column;
           margin: 0 50px;
+          width: auto;
         }
 
         i.icon {
