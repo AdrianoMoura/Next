@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'NewJune';
+  src: url('/assets/fonts/NewJune-Regular.otf') format("opentype");
+}
+ 
+@font-face {
+  font-family: 'NewJune';
+  font-weight: 500;
+  src: url('/assets/fonts/NewJune-Medium.otf') format("opentype");
+}
+
+* {
+  font-family: NewJune;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding-top: 80px;
+  
+  @media (min-width: 1366px) {
+    padding-top: 140px;
+  }
+}

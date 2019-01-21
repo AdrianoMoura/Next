@@ -1,0 +1,87 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  background-color: #FFF;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1366px) {
+    height: 140px;
+    padding: 50px;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    transform: translate(-50%);
+    list-style: none;
+
+    li {
+      width: 200px;
+      color: #000;
+      opacity: .5;
+
+      &:before {
+        content: "\2022";
+        color: #000;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      &.active {
+        opacity: 1;
+
+        &:before {
+          color: #00ff5f;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .menu {
+      display: flex;
+    }
+  }
+
+  .logo {
+    background-image: url('/assets/icons/logo.svg');
+    width: 60px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    @media (min-width: 1366px) {
+      width: 80px;
+      height: 60px;
+    }
+  }
+
+  .openAccountBtn {
+    display: flex;
+    width: 165px;
+    height: 100%;
+    background-color: #000;
+    border-radius: 10px;
+    color: #FFF;
+    margin-left: auto;
+    font-size: 14px;
+    
+    p {
+        margin: auto;
+        text-align: center;
+    }
+  }
+}

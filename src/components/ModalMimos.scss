@@ -1,0 +1,108 @@
+.modal-mimos {
+    z-index: 10000;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    @media (min-width:1366px) {
+        top: 140px;
+    }
+
+    background-color: #f7f7f7;
+
+    > .modal-header {
+        border: solid 1px rgb(177, 177, 177);
+        border-width: 0 0 1px 0;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        button {
+            margin-left: auto;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('/assets/icons/close.svg');
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+        }
+    }
+
+    .modal-body {
+        padding: 30px 20px;
+        height: 90%;
+        overflow: auto;
+
+        h2 {
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        h2, h3, p {
+            margin: 0 0 30px 0;
+        }
+
+        @media (min-width: 1366px) {
+            padding: 0;
+            display: flex;
+            height: 90%;
+            overflow: hidden;
+            align-items: center;
+            
+            h2 {
+                font-size: 38px;
+                margin: 0 40px;
+            }
+
+            .colmodal {
+                width: 100%;
+                padding: 30px 20px;
+
+                &:last-child {
+                    padding: 80px 20px;
+                    height: 100%;
+                    background-color: #EEE;
+
+                    & > div {
+                        height: 100%;
+                        padding: 0 30px 0 0;
+                        width: 100%;
+                        overflow: auto;
+                        /* width */
+                        &::-webkit-scrollbar {
+                            width: 2px;
+                        }
+                        
+                        /* Track */
+                        &::-webkit-scrollbar-track {
+                            background: #c7c7c7; 
+                        }
+                        
+                        /* Handle */
+                        &::-webkit-scrollbar-thumb {
+                            background: #000; 
+                        }
+                        
+                        /* Handle on hover */
+                        &::-webkit-scrollbar-thumb:hover {
+                            background: #000; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
